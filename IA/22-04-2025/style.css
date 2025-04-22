@@ -1,208 +1,115 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
-  body {
-    background-color: #f7f7f7;
-    color: #333;
-    font-size: 14px;
-    padding: 0 10px;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 20px;
-  }
-  
-  /* Cabeçalho */
-  .header {
-    background-color: #0053a0;
-    color: white;
-    padding: 20px;
-    text-align: right;
-  }
-  
-  .header h1 {
-    font-size: 18px;
-  }
-  
-  .header p {
-    font-size: 13px;
-    opacity: 0.9;
-  }
-  
-  /* Título da Seção */
-  .section-title {
-    text-align: center;
-    margin: 20px 0 10px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  /* Painéis de contagens */
-  .count-panels {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
-    background: white;
-    border-radius: 6px;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .count-panel {
-    flex: 1 1 45%;
-    border: 1px solid #eee;
-    border-radius: 5px;
-    padding: 10px;
-  }
-  
-  .count-panel h3 {
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-  
-  .count-grid {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-  
-  .count-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-    background: #f4f4f4;
-    padding: 8px;
-    border-radius: 5px;
-    font-size: 12px;
-  }
-  
-  .count-number {
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  .status-Aguardando {
-    background-color: #ffefc4;
-  }
-  
-  .status-Analise {
-    background-color: #e7f0ff;
-  }
-  
-  .status-Pendente {
-    background-color: #ffe0e0;
-  }
-  
-  .status-Reprovado {
-    background-color: #ffc2c2;
-  }
-  
-  .status-Aprovado {
-    background-color: #d5f5e3;
-  }
-  
-  /* Lista de Processos */
-  .process-list {
-    background: white;
-    border-radius: 6px;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .process-item {
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .process-item:last-child {
-    border-bottom: none;
-  }
-  
-  .process-item label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .process-status {
-    margin-top: 5px;
-    font-size: 13px;
-  }
-  
-  .process-actions {
-    float: right;
-  }
-  
-  /* Botões */
-  button, .btn {
-    background-color: #fff;
-    border: 1px solid #007bff;
-    color: #007bff;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 13px;
-  }
-  
-  button:hover, .btn:hover {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  /* Cards Acessos */
-  .quick-access {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  
-  .card {
-    flex: 1 1 30%;
-    background: white;
-    padding: 15px;
-    border-radius: 6px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
-  }
-  
-  .card h4 {
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    font-size: 13px;
-    margin-bottom: 10px;
-  }
-  
-  .card .tags {
-    font-size: 12px;
-    margin-bottom: 10px;
-    color: #666;
-  }
-  
-  .card .btn-access {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #0053a0;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 13px;
-  }
-  
-  .card .btn-access:hover {
-    background-color: #003e7e;
-  }  
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #005bac;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #005bac;
+    }
+
+    .box-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+
+    .box {
+      flex: 1 1 48%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .box h3 {
+      margin: 0 0 1rem 0;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .status {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 1rem;
+    }
+
+    .status div {
+      text-align: center;
+    }
+
+    .processo {
+      border-top: 1px solid #ccc;
+      padding: 1rem 0;
+    }
+
+    .processo h4 {
+      margin: 0 0 0.5rem;
+    }
+
+    .status-label {
+      font-weight: bold;
+      color: #005bac;
+    }
+
+    .acoes {
+      margin: 0.5rem 0;
+      display: inline-block;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      border: 1px solid #005bac;
+      background-color: white;
+      color: #005bac;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005bac;
+      color: white;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1 1 30%;
+      background-color: #f1f7fd;
+      border: 1px solid #cce1f3;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0.5rem;
+      text-align: center;
+    }
+
+    .card h4 {
+      color: #005bac;
+    }
+
+    .card button {
+      margin-top: 1rem;
+    }
