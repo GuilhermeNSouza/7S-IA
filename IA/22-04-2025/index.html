@@ -55,17 +55,18 @@
       </div>
     </div>
 
-    <h2>Processos em meu nome</h2>
-    <div class="processo">
+    <!--<h2>Processos em meu nome</h2>
+    <div class="processo">-->
+      <h2 class="section-title toggle-header" onclick="toggleProcessList()">
+        Processos em meu nome <span id="toggle-icon">+</span>
+      </h2>
+      <div class="process-list" id="process-list" style="display: none;">      
       <h4>Auto Tech Serviços</h4>
       <p>ID: 098767<br>CNPJ: 55.555.555/0001-48<br>Serviço: Empresa de Vistoria<br>Tipo de Solicitação: Renovação de Credenciamento</p>
       <p class="status-label">Status: Aguardando Análise</p>
       <div class="acoes">
         <button>Ações</button>
       </div>
-    </div>
-
-    <div class="processo">
       <h4>Auto Serviços</h4>
       <p>ID: 098768<br>CNPJ: 66.666.666/0001-99<br>Serviço: Empresa de Vistoria<br>Tipo de Solicitação: Renovação de Credenciamento</p>
       <p class="status-label">Status: Em Análise</p>
@@ -92,5 +93,16 @@
       </div>
     </div>
   </div>
+  <script>
+    function toggleProcessList() {
+      const list = document.getElementById('process-list');
+      const icon = document.getElementById('toggle-icon');
+      const isVisible = list.style.display === 'block';
+  
+      list.style.display = isVisible ? 'none' : 'block';
+      icon.textContent = isVisible ? '+' : '−';
+    }
+  </script>
+  
 </body>
 </html>
