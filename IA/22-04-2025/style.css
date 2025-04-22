@@ -33,13 +33,44 @@
       margin-bottom: 2rem;
     }
 
-    .box {
+    /*.box {
       flex: 1 1 48%;
       border: 1px solid #ccc;
       border-radius: 8px;
       padding: 1rem;
       margin-bottom: 1rem;
     }
+    */
+    .box-group {
+      display: flex;
+      gap: 20px; /* espaço entre os blocos */
+      flex-wrap: wrap; /* permite quebrar se a tela for pequena */
+    }
+    
+    .box {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 16px;
+      flex: 1;
+      min-width: 300px; /* largura mínima */
+    }
+    
+    .status {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    
+    .status div {
+      background: #f5f5f5;
+      padding: 8px;
+      border-radius: 4px;
+      text-align: center;
+      flex: 1;
+      min-width: 100px;
+    }    
 
     .box h3 {
       margin: 0 0 1rem 0;
